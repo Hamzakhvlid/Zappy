@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { Hero, Navbar } from './components'
 import LoginPage from './components/loginPage'
+import SignUpPage from './components/signUp'
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
 
     <div  id="screen">
      
-      <LoginPage/>
+    <SignUpPage/>
     </div>
   )
 }
