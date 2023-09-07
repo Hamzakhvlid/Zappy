@@ -5,18 +5,20 @@ import './App.css'
 import { Hero, Navbar } from './components'
 import LoginPage from './components/loginPage'
 import SignUpPage from './components/signUp'
+import RoundBox from './components/roundBox'
+import Sampledata from './components/data'
+import MenuPage from './components/menuPage'
 
 
 function App() {
   
 
-  return (
+  
 
-    <div  id="screen">
-     
-    <SignUpPage/>
-    </div>
-  )
+  return (
+    <div >
+     <MenuPage/>
+    </div>);
 }
 
 export default App
