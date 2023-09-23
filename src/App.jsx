@@ -8,17 +8,18 @@ import SignUpPage from './components/signUp'
 import RoundBox from './components/roundBox'
 import Sampledata from './components/data'
 import MenuPage from './components/menuPage'
+import Main from './components/Main'
 
 
 function App() {
   
 
-  
+  console.log(Sampledata['menu']);
 
   return (
-    <div >
-     <MenuPage/>
-    </div>);
+    <Main >
+     <LoginPage/>
+    </Main>);
 }
 
 export default App
