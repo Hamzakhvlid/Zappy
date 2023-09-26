@@ -2,7 +2,7 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div className=' lg:flex    content-evenly ' >
+    <div className=' lg:flex    content-evenly  ' >
 
 
       <div className='flex-col '>

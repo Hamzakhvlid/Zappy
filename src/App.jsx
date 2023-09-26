@@ -17,9 +17,11 @@ function App() {
   console.log(Sampledata['menu']);
 
   return (
-    <Main >
-     <LoginPage/>
-    </Main>);
+    <div  className="bg-[#FFD700] w-full ">
+      <Navbar/>
+      
+     <Hero/>
+    </div>);
 }
 
 export default App
