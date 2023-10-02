@@ -1,27 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import './App.css'
-import { Hero, Navbar } from './components'
 import LoginPage from './components/loginPage'
-import SignUpPage from './components/signUp'
-import RoundBox from './components/roundBox'
-import Sampledata from './components/data'
-import MenuPage from './components/menuPage'
-import Main from './components/Main'
+import RootLayout from './layouts/root';
+
+
+
+const router = createBrowserRouter(
+  {
+  path: '/',
+  element: < RootLayout />, 
+  children: [ 
+   {path:'/',element:<LoginPage/>}
+  ]
+  
+  }
+
+  );
+  // const
 
 
 function App() {
   
 
-  console.log(Sampledata['menu']);
+
 
   return (
-    <div  className="bg-[#FFD700] w-full ">
-      <Navbar/>
-      
-     <Hero/>
-    </div>);
+  
+    <RouterProvider router={router}/>
+  
+   );
 }
 
 export default App
